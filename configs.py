@@ -11,19 +11,38 @@ DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://akre:akre@cluster0.gtpo3
 LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-100****"))
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.getenv("ADMINS", "123456").split(",")]
 
-START_TXT = '''<b>Hᴇʟʟᴏ {}, I Aᴍ Sʜᴏʀᴛɴᴇʀ Bᴏᴛ!.
+START_TXT = '''<b>{},
+
 ๏ I ᴄᴀɴ Cᴏɴᴠᴇʀᴛ ʏᴏᴜʀ ʟɪɴᴋs ᴛᴏ Sʜᴏʀᴛ ʟɪɴᴋs ᴜsɪɴɢ ʏᴏᴜʀ ᴀᴩɪ.
-๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ Hᴇʟᴩ Mᴇɴᴜ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.
-๏ Uᴘᴅᴀᴛᴇs - ⁂ @tamilan_botsz</b>'''
-HELP_TXT = '''Sᴇɴᴅ ᴍᴇ ᴀɴʏ ʟɪɴᴋ ɪ ᴡɪʟʟ ᴄᴏɴᴠᴇʀᴛ ɪᴛ ᴛᴏ sʜᴏʀᴛ ʟɪɴᴋ ᴜsɪɴɢ ʏᴏᴜʀ ᴀᴘɪ
-ʏᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ᴛʜᴀᴛ ʟɪɴᴋ ᴀɴᴅ ᴇᴀʀɴ ᴍᴏɴᴇʏ.
-sᴇɴᴅ /set_shortner ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ - Uᴘᴅᴀᴛᴇs - ⍟ @cineoriginals'''
-ABOUT_TXT = '''<b>╔════❰ Tʙ Sʜᴏʀᴛɴᴇʀ Bᴏᴛ ❱═══❍
+
+๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ Hᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.
+
+๏ By - @TechifyBots</b>'''
+
+LOG_TEXT = '''<b>#NewUser
+    
+ID - <code>{}</code>
+
+Name - {}</b>'''
+
+HELP_TXT = '''Send Shortener URL & API along with the command.
+
+Ex: <code>/shortlink example.com api</code>
+
+Now send me any link I will convet that link into your connected Shortener
+
+If you want to remove your Shortener then use <code>/remove</code> command.'''
+
+FORCE_SUBSCRIBE_TEXT = '''<b>{}, Tᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ғɪʀsᴛ. Tʜᴇ ʙᴏᴛ ᴡɪʟʟ ɴᴏᴛ ᴘʀᴏᴄᴇss ᴀɴʏ ʀᴇǫᴜᴇsᴛs ᴡɪᴛʜᴏᴜᴛ ᴊᴏɪɴɪɴɢ.
+
+बॉट का उपयोग करने के लिए आपको पहले हमारे चैनल में Join होना होगा। बॉट बिना शामिल हुए किसी भी Request को Process नहीं करेगा।</b>'''
+
+ABOUT_TXT = '''<b>╔════❰ ShortLink Bot ❱═══❍
 ║ ┏━━━━━━━━━❥
 ║ ┣ Mʏ ɴᴀᴍᴇ -> {}
-║ ┣ Mʏ Oᴡɴᴇʀ -> @Sharathitsisme & @iSmartBoii_Ujjwal
-║ ┣ Uᴘᴅᴀᴛᴇꜱ -> <a href="tg://tamilan_botsz">••Bᴏᴛs••</a>
-║ ┣ 𝖲ᴜᴘᴘᴏʀᴛ -> <a href="tg://tamilanbotsz_support"> Bᴏᴛs Sᴜᴩᴩᴏʀᴛ</a>
+║ ┣ Mʏ Oᴡɴᴇʀ -> @CallOwnerBot
+║ ┣ Uᴘᴅᴀᴛᴇꜱ -> @TechifyBots
+║ ┣ 𝖲ᴜᴘᴘᴏʀᴛ -> @TechifySupport
 ║ ┣ ๏ Cʜᴇᴄᴋ ʜᴇʟᴘ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ.
 ║ ┗━━━━━━━━━❥
 ╚═════❰ @ ❱═════❍</b>'''
