@@ -3,7 +3,7 @@ import re
 
 id_pattern = re.compile(r'^(\d+)$')
 
-API_ID = int(os.getenv("API_ID", 29171167))
+API_ID = int(os.getenv("API_ID", "29171167"))
 API_HASH = os.getenv("API_HASH", "7ea2149629e445936619f06a3c0dc716")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 BASE_URL = os.getenv("BASE_URL", "tricky-dede-akad-e2b2d353.koyeb.app")
