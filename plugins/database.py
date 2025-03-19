@@ -50,4 +50,4 @@ class Database:
         await self.col.update_one({'id': int(uid)}, {'$unset': {key: ""}})
 
 
-db = Database(DATABASE_URL, " TechifyBots")
+db = Database(DATABASE_URL, "TechifyBots")
