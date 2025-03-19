@@ -1,4 +1,4 @@
-pyrofork>=2.3.58
+pyrogram==2.0.106
 TgCrypto
 shortzy
 aiohttp
