@@ -11,7 +11,7 @@ async def start_handler(c, m):
         user_id = m.from_user.id
         user_mention = m.from_user.mention
 
-        if not await db.is_user_exist(user_id)
+        if not await db.is_user_exist(user_id):
             await db.add_user(user_id)
             await c.send_message(LOG_CHANNEL, LOG_TEXT.format(user_id, user_mention))
 
@@ -27,6 +27,7 @@ async def start_handler(c, m):
         )
     except Exception as e:
         print(f"Error in start_handler: {e}")
+
 
 
 @Client.on_message(filters.command('shortlink') & filters.private)
