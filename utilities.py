@@ -8,7 +8,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("TamilanBotsZ")
+    return web.json_response("TechifyBots")
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -38,7 +38,7 @@ async def short_link(link, uid):
 
 async def save_data(tst_url, tst_api, uid):
     shortzy = Shortzy(api_key=tst_api, base_site=tst_url)
-    link=f"https://t.me/iSmartBoii_Ujjwal"
+    link=f"https://telegram.me/TechifyBots"
     short = await shortzy.convert(link)        
     if short.startswith("http"):
         await db.set_shortner(uid, shortner=tst_url, api=tst_api)
