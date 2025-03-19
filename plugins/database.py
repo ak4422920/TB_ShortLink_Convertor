@@ -1,4 +1,4 @@
-from config import *
+from configs import *
 import motor.motor_asyncio, datetime
 
 
