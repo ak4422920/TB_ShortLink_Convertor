@@ -8,8 +8,8 @@ API_HASH = os.getenv("API_HASH", "7ea2149629e445936619f06a3c0dc716")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 BASE_URL = os.getenv("BASE_URL", "tricky-dede-akad-e2b2d353.koyeb.app")
 DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://akre:akre@cluster0.gtpo3kw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-100****"))
-ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.getenv("ADMINS", "123456").split(",")]
+LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002247400551"))
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.getenv("ADMINS", "7251898668").split(",")]
 
 START_TXT = '''<b>{},
 
