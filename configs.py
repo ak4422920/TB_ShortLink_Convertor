@@ -5,7 +5,7 @@ id_pattern = re.compile(r'^(\d+)$')
 
 API_ID = int(os.getenv("API_ID", "29171167"))
 API_HASH = os.getenv("API_HASH", "7ea2149629e445936619f06a3c0dc716")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7821793288:AAG-GFPcr-_r1bX_0SDyOINa9SuRWmnyoT8")
 BASE_URL = os.getenv("BASE_URL", "")
 DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://akre:akre@cluster0.gtpo3kw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002247400551"))
