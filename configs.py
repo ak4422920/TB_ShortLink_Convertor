@@ -19,7 +19,7 @@ START_TXT = '''<b>{},
 
 ๏ By - @AKMovieBotz</b>'''
 
-LOG_TEXT = '''<b>#NewUser
+LOG_TEXT = '''<b>#7821793288:AAG-GFPcr-_r1bX_0SDyOINa9SuRWmnyoT8NewUser
     
 ID - <code>{}</code>
 
